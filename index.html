@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Dashboard | DevInk Solutions</title>
+    <link rel="icon" type="text/css" href="dbimg/title.jpg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css"
+    />
+
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" type="text/css" href="talwind.css" />
+  </head>
+
+  <body>
+    <div id="loader"></div>
+    <div id="content">
+      <div class="max-w-[1500px] xl:p-3 bg-blue-800">
+        <div class="max-w-[1500x] grid grid-cols-12">
+          <!-- 2nd Asidebar -->
+
+          <div id="inasidebar">
+            <i class="fa-solid fa-xmark" id="rembtn"></i>
+
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-house"></i>&nbsp;
+                  <span>Dashboard</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-cubes"></i>&nbsp;
+                  <span>Menu Layout</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="jquerytable.html" target="_self">
+                  <i class="fa-sharp fa-solid fa-suitcase"></i>&nbsp;&nbsp;
+                  <span>E-Commerce</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-inbox"></i>&nbsp;&nbsp;
+                  <span>Inbox</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-regular fa-folder-open"></i>&nbsp;&nbsp;
+                  <span>File Manager</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-credit-card"></i>&nbsp;&nbsp;
+                  <span>Point of Salet</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-regular fa-message"></i>&nbsp;&nbsp;
+                  <span class="title">Chat</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-file-lines"></i
+                  >&nbsp;&nbsp;&nbsp;
+                  <span>Post</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;&nbsp;
+                  <span>Calender</span>
+                </a>
+              </li>
+
+              <hr />
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;&nbsp;
+                  <span>Crud</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-user-group"></i>&nbsp;
+                  <span>User</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-id-card-clip"></i>&nbsp;&nbsp;
+                  <span>Profile</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-pager"></i>&nbsp;&nbsp;
+                  <span>Pages</span>
+                </a>
+              </li>
+
+              <hr />
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-box-archive"></i>&nbsp;&nbsp;
+                  <span>Components</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-table-list"></i>&nbsp;&nbsp;
+                  <span>Forms</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-server"></i>&nbsp;&nbsp;
+                  <span>Widgets</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="xl:col-span-2 col-span-12">
+            <div class="grid grid-cols-1 text-white xl:hidden" id="fixnav1">
+              <div id="fixnav2">
+                <i class="fa-solid fa-layer-group"></i>
+                <i class="fa-solid fa-bars" id="openaside"></i>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 xl:block hidden" id="nevigation">
+              <ul class="ps-2">
+                <li class="flex items-center font-medium ps-4 pt-5 pb-2">
+                  <a href="/index.html">
+                    <i class="fa-solid fa-layer-group text-2xl"></i>
+                    <span class="title">DevInk Solutions</span>
+                  </a>
+                </li>
+
+                <hr class="mt-8 mb-6 mx-1" />
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-solid fa-house"></i>&nbsp;
+                    <span class="title">Dashboard</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="/index.html">
+                    <i class="fa-sharp fa-solid fa-cubes"></i>&nbsp;
+                    <span class="title">Menu Layout</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="jquerytable.html" target="_self">
+                    <i class="fa-sharp fa-solid fa-suitcase"></i>&nbsp;&nbsp;
+                    <span class="title">E-Commerce</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-solid fa-inbox"></i>&nbsp;&nbsp;
+                    <span class="title">Inbox</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-regular fa-folder-open"></i
+                    >&nbsp;&nbsp;
+                    <span class="title">File Manager</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-solid fa-credit-card"></i>&nbsp;&nbsp;
+                    <span class="title">Point of Salet</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-regular fa-message"></i>&nbsp;&nbsp;
+                    <span class="title">Chat</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-solid fa-file-lines"></i
+                    >&nbsp;&nbsp;&nbsp;
+                    <span class="title">Post</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-solid fa-calendar-days"></i
+                    >&nbsp;&nbsp;
+                    <span class="title">Calender</span>
+                  </a>
+                </li>
+
+                <hr class="mt-6 mb-6 mx-1" />
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-solid fa-calendar-days"></i
+                    >&nbsp;&nbsp;
+                    <span class="title">Crud</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-solid fa-user-group"></i>&nbsp;
+                    <span class="title">User</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-solid fa-id-card-clip"></i
+                    >&nbsp;&nbsp;
+                    <span class="title">Profile</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-solid fa-pager"></i>&nbsp;&nbsp;
+                    <span class="title">Pages</span>
+                  </a>
+                </li>
+
+                <hr class="mt-6 mb-6 mx-1" />
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-solid fa-box-archive"></i>&nbsp;&nbsp;
+                    <span class="title">Components</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-solid fa-table-list"></i>&nbsp;&nbsp;
+                    <span class="title">Forms</span>
+                  </a>
+                </li>
+
+                <li
+                  class="flex items-center font-normal ps-4 py-3 mb-8 rounded-s-3xl"
+                >
+                  <a href="#">
+                    <i class="fa-sharp fa-solid fa-server"></i>&nbsp;&nbsp;
+                    <span class="title">Widgets</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Content Part -->
+
+          <div class="xl:col-span-10 col-span-12 bg-slate-100 xl:rounded-3xl">
+            <div
+              class="items-center grid grid-cols-12 sm:mx-4 pt-5"
+              id="topnav"
+            >
+              <div id="usrpfile">
+                <h4>DevInk Developer</h4>
+                <p id="para1">Front-end Engineer</p>
+
+                <hr />
+
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-user"></i>&nbsp;&nbsp;
+                      <p>Profile</p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa-regular fa-pen-to-square"></i>&nbsp;&nbsp;
+                      <p>Add Account</p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-lock"></i>&nbsp;&nbsp;&nbsp;
+                      <p>Reset Password</p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-circle-question"></i>&nbsp;&nbsp;
+                      <p>Help</p>
+                    </a>
+                  </li>
+
+                  <hr id="sechr" />
+
+                  <li style="margin-bottom: 10px">
+                    <a href="#">
+                      <i class="fa-solid fa-toggle-on"></i>&nbsp;&nbsp;
+                      <p>Logout</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="flex justify-evenly col-span-3 sm:hidden">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <div class="relative" id="notif">
+                  <i class="fa-regular fa-bell"></i>
+                  <span class="rounded-full"></span>
+                </div>
+              </div>
+
+              <div class="col-span-9 sm:hidden">
+                <img
+                  class="rounded-full ml-auto mr-6"
+                  src="dbimg/avtar.png"
+                  id="mblimg"
+                  alt="User Profile Photo"
+                />
+              </div>
+
+              <div
+                class="lg:col-span-8 md:col-span-6 sm:col-span-5 sm:block hidden"
+              >
+                <span class="text-indigo-700 font-medium">Application</span
+                >&nbsp;&nbsp;>&nbsp;&nbsp;Dashboard
+              </div>
+
+              <div
+                class="flex justify-between items-center lg:col-span-4 md:col-span-6 sm:col-span-7 col-span-12 mx-2 sm:mx-0"
+                id="navbar2"
+              >
+                <input
+                  class="py-2 px-5 bg-slate-200 rounded-full"
+                  type="search"
+                  name=""
+                  placeholder="Search..."
+                />
+
+                <div class="relative" id="notif">
+                  <i class="fa-regular fa-bell"></i>
+                  <span class="rounded-full"></span>
+                </div>
+
+                <img class="rounded-full" src="dbimg/avtar.png" id="image" />
+              </div>
+            </div>
+
+            <hr class="text-white mt-8 mx-6" id="hrs" />
+
+            <div class="mx-5 pt-10 flex justify-between items-center">
+              <p class="text-xl">General Report</p>
+              <p class="text-indigo-700 text-sm">
+                <i class="fa-sharp fa-solid fa-rotate"></i>&nbsp;&nbsp;Reload
+                Data
+              </p>
+            </div>
+
+            <!-- start 4 cards -->
+
+            <div
+              class="grid lg:grid-cols-4 sm:grid-cols-2 lg:mx-5 sm:mx-4 mx-3 gap-4 mt-8"
+              id="spancards"
+            >
+              <div
+                class="border hover:scale-105 duration-300 bg-white hover:drop-shadow-lg rounded-lg"
+              >
+                <div class="flex justify-between items-center mt-5">
+                  <i
+                    class="fa-sharp fa-solid fa-cart-shopping ms-5 text-2xl text-indigo-700"
+                  ></i>
+                  <span
+                    class="bg-lime-500 flex items-center rounded-3xl me-5 text-white text-xs px-2 py-1"
+                    >33%&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-angle-up"></i
+                  ></span>
+                </div>
+                <p class="ms-5 font-medium text-2xl mt-5">4.710</p>
+                <p class="ms-5 mb-4 font-medium">Item Sales</p>
+              </div>
+
+              <div
+                class="border hover:scale-105 duration-300 bg-white hover:drop-shadow-lg rounded-lg"
+              >
+                <div class="flex justify-between items-center mt-5">
+                  <i
+                    class="fa-sharp fa-regular fa-credit-card ms-5 text-2xl text-amber-600"
+                  ></i>
+                  <span
+                    class="bg-red-600 flex items-center rounded-3xl me-5 text-white text-xs px-2 py-1"
+                    >2%&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-angle-up"></i
+                  ></span>
+                </div>
+                <p class="ms-5 font-medium text-2xl mt-5">3.721</p>
+                <p class="ms-5 mb-4 font-medium">New Orders</p>
+              </div>
+
+              <div
+                class="border hover:scale-105 duration-300 bg-white hover:drop-shadow-lg rounded-lg"
+              >
+                <div class="flex justify-between items-center mt-5">
+                  <i
+                    class="fa-sharp fa-solid fa-display ms-5 text-2xl text-amber-400"
+                  ></i>
+                  <span
+                    class="bg-lime-500 flex items-center rounded-3xl me-5 text-white text-xs px-2 py-1"
+                    >12%&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-angle-up"></i
+                  ></span>
+                </div>
+                <p class="ms-5 font-medium text-2xl mt-5">2.149</p>
+                <p class="ms-5 mb-4 font-medium">Total Products</p>
+              </div>
+
+              <div
+                class="border hover:scale-105 duration-300 bg-white hover:drop-shadow-lg rounded-lg"
+              >
+                <div class="flex justify-between items-center mt-5">
+                  <i class="fa-regular fa-user ms-5 text-2xl text-lime-500"></i>
+                  <span
+                    class="bg-lime-500 flex items-center rounded-3xl me-5 text-white text-xs px-2 py-1"
+                    >22%&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-angle-up"></i
+                  ></span>
+                </div>
+                <p class="ms-5 font-medium text-2xl mt-5">152.040</p>
+                <p class="ms-5 mb-4 font-medium">Unique Visitor</p>
+              </div>
+            </div>
+
+            <!-- Graphs -->
+
+            <div class="grid sm:grid-cols-12 lg:mx-5 sm:mx-4 mx-3 gap-5 mt-8">
+              <div
+                class="lg:col-span-6 md:col-span-12 col-span-12 overflow-x-auto"
+              >
+                <div class="lg:col-span-6 md:col-span-6 col-span-12">
+                  <div
+                    class="flex justify-between items-center mt-11 mb-5 mx-auto"
+                  >
+                    <p class="text-lg font-medium">Sales Report</p>
+                    <span class="bg-white py-2 px-3 rounded-lg"
+                      ><i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;
+                      17 Apr, 2023 - 17 May, 2023</span
+                    >
+                  </div>
+                </div>
+
+                <div class="bg-white rounded-md py-5">
+                  <canvas
+                    class="mx-auto"
+                    id="line-chart"
+                    width="500px"
+                    height="352px"
+                  ></canvas>
+                </div>
+              </div>
+
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+                <div class="flex justify-between items-center mt-11 mb-8">
+                  <p class="text-lg font-medium">Weekly Top Seller</p>
+                  <p class="text-indigo-700 text-sm">Show More</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-md">
+                  <div>
+                    <canvas
+                      class="mx-auto"
+                      id="piechart"
+                      width="220px"
+                      height="220"
+                    ></canvas>
+                  </div>
+
+                  <div class="mt-10 mb-4">
+                    <div
+                      class="flex items-center grid grid-cols-12 font-medium text-sm"
+                    >
+                      <span
+                        class="col-span-1 mx-auto bg-sky-700"
+                        id="circle"
+                      ></span>
+                      <p
+                        class="col-span-11 flex justify-between items-center mx-1"
+                      >
+                        17 - 30 Years old<span class="font-medium">65%</span>
+                      </p>
+                    </div>
+
+                    <div
+                      class="flex items-center grid grid-cols-12 font-medium text-sm mt-4"
+                    >
+                      <span
+                        class="col-span-1 mx-auto bg-orange-600"
+                        id="circle"
+                      ></span>
+                      <p
+                        class="col-span-11 flex justify-between items-center mx-1"
+                      >
+                        31 - 50 Years old<span class="font-medium">15%</span>
+                      </p>
+                    </div>
+
+                    <div
+                      class="flex items-center grid grid-cols-12 font-medium text-sm mt-4"
+                    >
+                      <span
+                        class="col-span-1 mx-auto bg-yellow-400"
+                        id="circle"
+                      ></span>
+                      <p
+                        class="col-span-11 flex justify-between items-center mx-1"
+                      >
+                        >= 50 Years old<span class="font-medium">10%</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+                <div class="flex justify-between items-center mt-11 mb-8">
+                  <p class="text-lg font-medium">Sales Report</p>
+                  <p class="text-indigo-700 text-sm">Show More</p>
+                </div>
+
+                <div class="bg-white p-3 rounded-md">
+                  <div>
+                    <canvas
+                      class="mx-auto"
+                      id="doughnut"
+                      width="220px"
+                      height="220px"
+                    ></canvas>
+                  </div>
+
+                  <div class="mt-10 mb-4">
+                    <div
+                      class="flex items-center grid grid-cols-12 font-medium text-sm"
+                    >
+                      <span
+                        class="col-span-1 mx-auto bg-sky-700"
+                        id="circle"
+                      ></span>
+                      <p
+                        class="col-span-11 flex justify-between items-center mx-1"
+                      >
+                        17 - 30 Years old<span class="font-medium">65%</span>
+                      </p>
+                    </div>
+
+                    <div
+                      class="flex items-center grid grid-cols-12 font-medium text-sm mt-4"
+                    >
+                      <span
+                        class="col-span-1 mx-auto bg-orange-600"
+                        id="circle"
+                      ></span>
+                      <p
+                        class="col-span-11 flex justify-between items-center mx-1"
+                      >
+                        31 - 50 Years old<span class="font-medium">15%</span>
+                      </p>
+                    </div>
+
+                    <div
+                      class="flex items-center grid grid-cols-12 font-medium text-sm mt-4"
+                    >
+                      <span
+                        class="col-span-1 mx-auto bg-yellow-400"
+                        id="circle"
+                      ></span>
+                      <p
+                        class="col-span-11 flex justify-between items-center mx-1"
+                      >
+                        >= 50 Years old<span class="font-medium">10%</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map -->
+
+            <div
+              class="grid lg:grid-cols-3 md:grid-cols-3 lg:mx-5 sm:mx-4 mx-3 gap-5 mt-8"
+            >
+              <div class="lg:col-span-2 md:col-span-2 col-span-3">
+                <div
+                  class="flex justify-between grid sm:grid-cols-12 items-center mt-11 mb-6 mx-auto"
+                >
+                  <p
+                    class="lg:col-span-7 md:col-span-5 col-span-12 text-lg font-medium"
+                  >
+                    Official Store
+                  </p>
+
+                  <span
+                    class="lg:col-span-5 md:col-span-7 col-span-5 bg-white ps-2 rounded-lg mt-2 sm:mt-0"
+                    ><i class="fa-solid fa-location-dot text-lg"></i>&nbsp;
+                    <input
+                      class="p-2 border-0"
+                      type="search"
+                      name=""
+                      placeholder="Filter by City"
+                  /></span>
+                </div>
+
+                <div class="col-span-12 p-4 bg-white rounded-lg">
+                  <p class="text-md font-medium mb-5">
+                    250 Official stores in 21 countries, click the marker to see
+                    location details.
+                  </p>
+
+                  <iframe
+                    style="width: 100%; min-height: 300px"
+                    class="rounded-lg"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d436199.5815240187!2d73.0177439941469!3d31.336641191459453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39227fee9c7557b5%3A0x40f689bcdf292d9f!2sImam%20Bargah%20Dar%20E%20Zahra%20Jaranwala!5e0!3m2!1sen!2s!4v1673810221393!5m2!1sen!2s"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="lg:col-span-1 md:col-span-1 col-span-3">
+                <p class="text-lg font-medium mt-12 mb-8">
+                  Weekly Best Sellers
+                </p>
+                <div class="grid grid-cols-1 gap-3" id="bestslr">
+                  <div
+                    class="grid grid-cols-12 p-3 flex items-center bg-white hover:scale-105 duration-300 hover:drop-shadow-lg rounded-lg"
+                  >
+                    <img class="col-span-2" src="dbimg/mens1.jpg" />
+                    <p class="col-span-7 px-2 font-medium text-md">
+                      John Travolta<br />
+                      <span class="text-xs">7 December 2021</span>
+                    </p>
+                    <span
+                      class="col-span-3 bg-lime-500 rounded-3xl text-white text-xs px-2 py-1 text-center"
+                      >137 sales</span
+                    >
+                  </div>
+
+                  <div
+                    class="grid grid-cols-12 p-3 flex items-center bg-white hover:scale-105 duration-300 hover:drop-shadow-lg rounded-lg"
+                  >
+                    <img class="col-span-2" src="dbimg/women1.jpg" />
+                    <p class="col-span-7 px-2 font-medium text-md">
+                      Mega Tim<br />
+                      <span class="text-xs">7 December 2021</span>
+                    </p>
+                    <span
+                      class="col-span-3 bg-lime-500 rounded-3xl text-white text-xs px-2 py-1 text-center"
+                      >100 sales</span
+                    >
+                  </div>
+
+                  <div
+                    class="grid grid-cols-12 p-3 flex items-center bg-white hover:scale-105 duration-300 hover:drop-shadow-lg rounded-lg"
+                  >
+                    <img class="col-span-2" src="dbimg/mens2.jpg" />
+                    <p class="col-span-7 px-2 font-medium text-md">
+                      Jack Miller<br />
+                      <span class="text-xs">7 December 2021</span>
+                    </p>
+                    <span
+                      class="col-span-3 bg-lime-500 rounded-3xl text-white text-xs px-2 py-1 text-center"
+                      >200 sales</span
+                    >
+                  </div>
+
+                  <div
+                    class="grid grid-cols-12 p-3 flex items-center bg-white hover:scale-105 duration-300 hover:drop-shadow-lg rounded-lg"
+                  >
+                    <img class="col-span-2" src="dbimg/women2.jpg" />
+                    <p class="col-span-7 px-2 font-medium text-md">
+                      Parry Zinta<br />
+                      <span class="text-xs">7 December 2021</span>
+                    </p>
+                    <span
+                      class="col-span-3 bg-lime-500 rounded-3xl text-white text-xs px-2 py-1 text-center"
+                      >157 sales</span
+                    >
+                  </div>
+
+                  <button
+                    class="border border-slate-400 rounded-md border-dotted py-3"
+                  >
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 Cards -->
+
+            <!-- <div class="border border-red-500 grid md:grid-cols-2  lg:mx-5 sm:mx-4 mx-3 gap-5 my-10">
+
+	     	        <div class="grid grid-cols-12 bg-white p-4 hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg" id="part1">
+	     	        	<div class="flex justify-between col-span-9">
+	     	         		<p class="font-medium text-lg">Target Sales<br>
+                           <span class="text-sm font-medium">300 Sales</span></p>
+	     	         	</div>
+
+	     	         	<div class="col-span-3 flex items-center border border-red-500">
+	     	         		
+	     	         	</div>
+	     	        </div>
+
+	     	         <div class="grid grid-cols-12 bg-white p-4 hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg" id="part1">
+	     	        	<div class="flex justify-between col-span-9">
+	     	         		<p class="font-medium text-lg">New Products<br>
+                           <span class="text-sm font-medium">1450 Products</span></p>
+	     	         	</div>
+
+	     	         	<div class="col-span-3 flex items-center border border-red-500">
+	     	         		
+	     	         	</div>
+	     	        </div>
+
+	     	         <div class="grid grid-cols-12 bg-white p-4 hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg" id="part1">
+	     	        	<div class="flex justify-between col-span-9">
+	     	         		<p class="font-medium text-lg">Social Media<br>
+                           <span class="text-sm font-medium"></span></p>
+	     	         	</div>
+
+	     	         	<div class="col-span-3 flex items-center border border-red-500">
+	     	         		
+	     	         	</div>
+	     	        </div>
+
+	     	         <div class="grid grid-cols-12 bg-white p-4 hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg" id="part1">
+	     	        	<div class="flex justify-between col-span-9">
+	     	         		<p class="font-medium text-lg">Posted Ads<br>
+                           <span class="text-sm font-medium"></span></p>
+	     	         	</div>
+
+	     	         	<div class="col-span-3 flex items-center border border-red-500">
+	     	         		
+	     	         	</div>
+	     	        </div>
+	        </div> -->
+
+            <!-- Table -->
+
+            <div id="tableimg" class="mx-5 overflow-x-auto my-20">
+              <table
+                id="mytable"
+                class="table table-striped"
+                style="width: 100%"
+              >
+                <thead class="text-left">
+                  <tr class="text-sm">
+                    <th>IMAGES</th>
+                    <th>PRODUCT NAME</th>
+                    <th>STOCK</th>
+                    <th>STATUS</th>
+                    <th>ACTIONS</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr class="text-sm bg-white border-y-8 border-slate-100">
+                    <td class="flex ps-5 py-3">
+                      <img
+                        class="rounded-full border-2 border-yellow-200"
+                        src="dbimg/tail1.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-4"
+                        src="dbimg/tail1.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-8"
+                        src="dbimg/tail1.jpg"
+                      />
+                    </td>
+                    <td>
+                      <span class="font-semibold">Nikon Z6</span> <br />
+                      PC & Laptop
+                    </td>
+                    <td>50</td>
+                    <td class="text-lime-500">
+                      <i class="fa-regular fa-square-check"></i
+                      >&nbsp;&nbsp;Active
+                    </td>
+                    <td class="text-gray-700">
+                      <i class="fa-regular fa-pen-to-square"></i
+                      >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                        class="text-red-500"
+                        ><i class="fa-solid fa-trash-can"></i
+                        >&nbsp;&nbsp;Delete</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="text-sm bg-white border-y-8 border-slate-100">
+                    <td class="flex ps-5 py-3">
+                      <img
+                        class="rounded-full border-2 border-yellow-200"
+                        src="dbimg/tail2.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-4"
+                        src="dbimg/tail2.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-8"
+                        src="dbimg/tail2.jpg"
+                      />
+                    </td>
+                    <td>
+                      <span class="font-semibold">Dell XPS 13</span> <br />
+                      PC & Laptop
+                    </td>
+                    <td>80</td>
+                    <td class="text-lime-500">
+                      <i class="fa-regular fa-square-check"></i
+                      >&nbsp;&nbsp;Active
+                    </td>
+                    <td class="text-gray-700">
+                      <i class="fa-regular fa-pen-to-square"></i
+                      >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                        class="text-red-500"
+                        ><i class="fa-solid fa-trash-can"></i
+                        >&nbsp;&nbsp;Delete</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="text-sm bg-white border-y-8 border-slate-100">
+                    <td class="flex ps-5 py-3">
+                      <img
+                        class="rounded-full border-2 border-yellow-200"
+                        src="dbimg/tail3.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-4"
+                        src="dbimg/tail3.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-8"
+                        src="dbimg/tail3.jpg"
+                      />
+                    </td>
+                    <td>
+                      <span class="font-semibold">Nike Tanjun</span> <br />Sport
+                      & Outdoor
+                    </td>
+                    <td>30</td>
+                    <td class="text-red-500">
+                      <i class="fa-regular fa-square-check"></i
+                      >&nbsp;&nbsp;Inactive
+                    </td>
+                    <td class="text-gray-700">
+                      <i class="fa-regular fa-pen-to-square"></i
+                      >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                        class="text-red-500"
+                        ><i class="fa-solid fa-trash-can"></i
+                        >&nbsp;&nbsp;Delete</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="text-sm bg-white border-y-8 border-slate-100">
+                    <td class="flex ps-5 py-3">
+                      <img
+                        class="rounded-full border-2 border-yellow-200"
+                        src="dbimg/tail4.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-4"
+                        src="dbimg/tail4.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-8"
+                        src="dbimg/tail4.jpg"
+                      />
+                    </td>
+                    <td>
+                      <span class="font-semibold">Sony A7 III</span> <br />
+                      PC & Laptop
+                    </td>
+                    <td>99</td>
+                    <td class="text-lime-500">
+                      <i class="fa-regular fa-square-check"></i
+                      >&nbsp;&nbsp;Active
+                    </td>
+                    <td class="text-gray-700">
+                      <i class="fa-regular fa-pen-to-square"></i
+                      >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                        class="text-red-500"
+                        ><i class="fa-solid fa-trash-can"></i
+                        >&nbsp;&nbsp;Delete</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="text-sm bg-white border-y-8 border-slate-100">
+                    <td class="flex ps-5 py-3">
+                      <img
+                        class="rounded-full border-2 border-yellow-200"
+                        src="dbimg/tail3.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-4"
+                        src="dbimg/tail3.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-8"
+                        src="dbimg/tail3.jpg"
+                      />
+                    </td>
+                    <td>
+                      <span class="font-semibold">Nike Tanjun</span> <br />Sport
+                      & Outdoor
+                    </td>
+                    <td>30</td>
+                    <td class="text-red-500">
+                      <i class="fa-regular fa-square-check"></i
+                      >&nbsp;&nbsp;Inactive
+                    </td>
+                    <td class="text-gray-700">
+                      <i class="fa-regular fa-pen-to-square"></i
+                      >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                        class="text-red-500"
+                        ><i class="fa-solid fa-trash-can"></i
+                        >&nbsp;&nbsp;Delete</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="text-sm bg-white border-y-8 border-slate-100">
+                    <td class="flex ps-5 py-3">
+                      <img
+                        class="rounded-full border-2 border-yellow-200"
+                        src="dbimg/tail4.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-4"
+                        src="dbimg/tail4.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-8"
+                        src="dbimg/tail4.jpg"
+                      />
+                    </td>
+                    <td>
+                      <span class="font-semibold">Sony A7 III</span> <br />
+                      PC & Laptop
+                    </td>
+                    <td>99</td>
+                    <td class="text-lime-500">
+                      <i class="fa-regular fa-square-check"></i
+                      >&nbsp;&nbsp;Active
+                    </td>
+                    <td class="text-gray-700">
+                      <i class="fa-regular fa-pen-to-square"></i
+                      >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                        class="text-red-500"
+                        ><i class="fa-solid fa-trash-can"></i
+                        >&nbsp;&nbsp;Delete</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="text-sm bg-white border-y-8 border-slate-100">
+                    <td class="flex ps-5 py-3">
+                      <img
+                        class="rounded-full border-2 border-yellow-200"
+                        src="dbimg/tail4.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-4"
+                        src="dbimg/tail4.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-8"
+                        src="dbimg/tail4.jpg"
+                      />
+                    </td>
+                    <td>
+                      <span class="font-semibold">Sony A7 III</span> <br />
+                      PC & Laptop
+                    </td>
+                    <td>99</td>
+                    <td class="text-lime-500">
+                      <i class="fa-regular fa-square-check"></i
+                      >&nbsp;&nbsp;Active
+                    </td>
+                    <td class="text-gray-700">
+                      <i class="fa-regular fa-pen-to-square"></i
+                      >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                        class="text-red-500"
+                        ><i class="fa-solid fa-trash-can"></i
+                        >&nbsp;&nbsp;Delete</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="text-sm bg-white border-y-8 border-slate-100">
+                    <td class="flex ps-5 py-3">
+                      <img
+                        class="rounded-full border-2 border-yellow-200"
+                        src="dbimg/tail1.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-4"
+                        src="dbimg/tail1.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-8"
+                        src="dbimg/tail1.jpg"
+                      />
+                    </td>
+                    <td>
+                      <span class="font-semibold">Nikon Z6</span> <br />
+                      PC & Laptop
+                    </td>
+                    <td>50</td>
+                    <td class="text-lime-500">
+                      <i class="fa-regular fa-square-check"></i
+                      >&nbsp;&nbsp;Active
+                    </td>
+                    <td class="text-gray-700">
+                      <i class="fa-regular fa-pen-to-square"></i
+                      >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                        class="text-red-500"
+                        ><i class="fa-solid fa-trash-can"></i
+                        >&nbsp;&nbsp;Delete</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="text-sm bg-white border-y-8 border-slate-100">
+                    <td class="flex ps-5 py-3">
+                      <img
+                        class="rounded-full border-2 border-yellow-200"
+                        src="dbimg/tail2.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-4"
+                        src="dbimg/tail2.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-8"
+                        src="dbimg/tail2.jpg"
+                      />
+                    </td>
+                    <td>
+                      <span class="font-semibold">Dell XPS 13</span> <br />
+                      PC & Laptop
+                    </td>
+                    <td>80</td>
+                    <td class="text-lime-500">
+                      <i class="fa-regular fa-square-check"></i
+                      >&nbsp;&nbsp;Active
+                    </td>
+                    <td class="text-gray-700">
+                      <i class="fa-regular fa-pen-to-square"></i
+                      >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                        class="text-red-500"
+                        ><i class="fa-solid fa-trash-can"></i
+                        >&nbsp;&nbsp;Delete</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="text-sm bg-white border-y-8 border-slate-100">
+                    <td class="flex ps-5 py-3">
+                      <img
+                        class="rounded-full border-2 border-yellow-200"
+                        src="dbimg/tail3.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-4"
+                        src="dbimg/tail3.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-8"
+                        src="dbimg/tail3.jpg"
+                      />
+                    </td>
+                    <td>
+                      <span class="font-semibold">Nike Tanjun</span> <br />Sport
+                      & Outdoor
+                    </td>
+                    <td>30</td>
+                    <td class="text-red-500">
+                      <i class="fa-regular fa-square-check"></i
+                      >&nbsp;&nbsp;Inactive
+                    </td>
+                    <td class="text-gray-700">
+                      <i class="fa-regular fa-pen-to-square"></i
+                      >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                        class="text-red-500"
+                        ><i class="fa-solid fa-trash-can"></i
+                        >&nbsp;&nbsp;Delete</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="text-sm bg-white border-y-8 border-slate-100">
+                    <td class="flex ps-5 py-3">
+                      <img
+                        class="rounded-full border-2 border-yellow-200"
+                        src="dbimg/tail2.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-4"
+                        src="dbimg/tail2.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-8"
+                        src="dbimg/tail2.jpg"
+                      />
+                    </td>
+                    <td>
+                      <span class="font-semibold">Dell XPS 13</span> <br />
+                      PC & Laptop
+                    </td>
+                    <td>80</td>
+                    <td class="text-lime-500">
+                      <i class="fa-regular fa-square-check"></i
+                      >&nbsp;&nbsp;Active
+                    </td>
+                    <td class="text-gray-700">
+                      <i class="fa-regular fa-pen-to-square"></i
+                      >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                        class="text-red-500"
+                        ><i class="fa-solid fa-trash-can"></i
+                        >&nbsp;&nbsp;Delete</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="text-sm bg-white border-y-8 border-slate-100">
+                    <td class="flex ps-5 py-3">
+                      <img
+                        class="rounded-full border-2 border-yellow-200"
+                        src="dbimg/tail3.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-4"
+                        src="dbimg/tail3.jpg"
+                      />
+                      <img
+                        class="rounded-full border-2 border-yellow-200 relative right-8"
+                        src="dbimg/tail3.jpg"
+                      />
+                    </td>
+                    <td>
+                      <span class="font-semibold">Nike Tanjun</span> <br />Sport
+                      & Outdoor
+                    </td>
+                    <td>30</td>
+                    <td class="text-red-500">
+                      <i class="fa-regular fa-square-check"></i
+                      >&nbsp;&nbsp;Inactive
+                    </td>
+                    <td class="text-gray-700">
+                      <i class="fa-regular fa-pen-to-square"></i
+                      >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                        class="text-red-500"
+                        ><i class="fa-solid fa-trash-can"></i
+                        >&nbsp;&nbsp;Delete</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Owl Carousel -->
+
+            <p class="mx-5 text-lg font-medium my-5">Important Notes</p>
+
+            <div
+              class="grid grid-cols-1 mx-5 bg-white hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg"
+            >
+              <div class="owl-carousel owl-theme" id="owl1">
+                <div class="item">
+                  <div class="">
+                    <p class="mt-5 px-4 font-semibold">
+                      Lorem Ipsum is simply dummy text 1
+                    </p>
+                    <p class="mt-1 px-4 text-sm">20 Hours Ago</p>
+                    <p class="mt-1 px-4 text-sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s.
+                    </p>
+                  </div>
+
+                  <div class="flex justify-between mx-4 mt-5">
+                    <span
+                      class="py-1 px-3 text-sm bg-slate-100 rounded-lg font-semibold"
+                      >View Notes</span
+                    >
+                    <span
+                      class="py-1 px-2 text-sm border rounded-lg font-semibold"
+                      >Dismiss</span
+                    >
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="">
+                    <p class="mt-5 px-4 font-semibold">
+                      Lorem Ipsum is simply dummy text 2
+                    </p>
+                    <p class="mt-1 px-4 text-sm">20 Hours Ago</p>
+                    <p class="mt-1 px-4 text-sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s.
+                    </p>
+                  </div>
+
+                  <div class="flex justify-between mx-4 mt-5">
+                    <span
+                      class="py-1 px-3 text-sm bg-slate-100 rounded-lg font-semibold"
+                      >View Notes</span
+                    >
+                    <span
+                      class="py-1 px-2 text-sm border rounded-lg font-semibold"
+                      >Dismiss</span
+                    >
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="">
+                    <p class="mt-5 px-4 font-semibold">
+                      Lorem Ipsum is simply dummy text 3
+                    </p>
+                    <p class="mt-1 px-4 text-sm">20 Hours Ago</p>
+                    <p class="mt-1 px-4 text-sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s.
+                    </p>
+                  </div>
+
+                  <div class="flex justify-between mx-4 mt-5">
+                    <span
+                      class="py-1 px-3 text-sm bg-slate-100 rounded-lg font-semibold"
+                      >View Notes</span
+                    >
+                    <span
+                      class="py-1 px-2 text-sm border rounded-lg font-semibold"
+                      >Dismiss</span
+                    >
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="">
+                    <p class="mt-5 px-4 font-semibold">
+                      Lorem Ipsum is simply dummy text 4
+                    </p>
+                    <p class="mt-1 px-4 text-sm">20 Hours Ago</p>
+                    <p class="mt-1 px-4 text-sm">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s.
+                    </p>
+                  </div>
+
+                  <div class="flex justify-between mx-4 mt-5">
+                    <span
+                      class="py-1 px-3 text-sm bg-slate-100 rounded-lg font-semibold"
+                      >View Notes</span
+                    >
+                    <span
+                      class="py-1 px-2 text-sm border rounded-lg font-semibold"
+                      >Dismiss</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- schedule -->
+
+            <div
+              class="grid lg:grid-cols-3 md:grid-cols-2 lg:mx-5 sm:mx-4 mx-3 gap-6 my-8"
+            >
+              <div>
+                <div class="flex justify-between mt-10 mb-4 items-center">
+                  <p class="text-lg font-medium">Schedules</p>
+                  <p class="text-sm font-medium text-indigo-700">
+                    + Add New Schedules
+                  </p>
+                </div>
+
+                <div
+                  class="grid grid-cols-1 mt-7 bg-white grid-flow-row auto-rows-max rounded-lg"
+                >
+                  <span class="flex justify-between items-center mx-7 mt-5"
+                    ><i class="fa-solid fa-angle-left"></i>
+                    <p class="font-medium">April</p>
+                    <i class="fa-solid fa-angle-right"></i
+                  ></span>
+
+                  <div class="grid grid-cols-7 text-center mx-4 mt-5">
+                    <div class="font-medium">Su</div>
+                    <div class="font-medium">Mo</div>
+                    <div class="font-medium">Tu</div>
+                    <div class="font-medium">We</div>
+                    <div class="font-medium">Th</div>
+                    <div class="font-medium">Fr</div>
+                    <div class="font-medium">Sa</div>
+                    <div class="py-2 rounded text-slate-500">29</div>
+                    <div class="py-2 rounded text-slate-500">30</div>
+                    <div class="py-2 rounded text-slate-500">31</div>
+                    <div class="py-2 rounded">1</div>
+                    <div class="py-2 rounded">2</div>
+                    <div class="py-2 rounded">3</div>
+                    <div class="py-2 rounded">4</div>
+                    <div class="py-2 rounded">5</div>
+                    <div class="py-2 rounded">6</div>
+                    <div class="py-2 rounded">7</div>
+                    <div class="py-2 rounded">8</div>
+                    <div class="py-2 rounded">9</div>
+                    <div class="py-2 rounded">10</div>
+                    <div class="py-2 rounded">11</div>
+                    <div class="py-2 rounded">12</div>
+                    <div class="py-2 rounded">13</div>
+                    <div class="py-2 rounded">14</div>
+                    <div class="py-2 rounded">15</div>
+                    <div class="py-2 rounded">16</div>
+                    <div class="py-2 rounded">17</div>
+                    <div class="py-2 rounded">18</div>
+                    <div class="py-2 rounded">19</div>
+                    <div class="py-2 rounded">20</div>
+                    <div class="py-2 rounded">21</div>
+                    <div class="py-2 rounded">22</div>
+                    <div class="py-2 rounded">23</div>
+                    <div class="py-2 rounded">24</div>
+                    <div class="py-2 rounded">25</div>
+                    <div class="py-2 rounded">26</div>
+                    <div class="py-2 rounded">27</div>
+                    <div class="py-2 rounded">28</div>
+                    <div class="py-2 rounded">29</div>
+                    <div class="py-2 rounded">30</div>
+                    <div class="py-2 rounded text-slate-500">1</div>
+                    <div class="py-2 rounded text-slate-500">2</div>
+                    <div class="py-2 rounded text-slate-500">3</div>
+                    <div class="py-2 rounded text-slate-500">4</div>
+                    <div class="py-2 rounded text-slate-500">5</div>
+                    <div class="py-2 rounded text-slate-500">6</div>
+                    <div class="py-2 rounded text-slate-500">7</div>
+                    <div class="py-2 rounded text-slate-500">8</div>
+                    <div class="py-2 rounded text-slate-500">9</div>
+                  </div>
+                  <hr />
+
+                  <div
+                    class="flex items-center grid grid-cols-12 font-medium text-sm mt-5 px-5"
+                  >
+                    <span
+                      class="col-span-1 mx-auto bg-orange-600"
+                      id="circle"
+                    ></span>
+                    <p
+                      class="col-span-11 flex justify-between items-center mx-1"
+                    >
+                      UI/UX Workshop<span class="font-medium">23th</span>
+                    </p>
+                  </div>
+
+                  <div
+                    class="flex items-center grid grid-cols-12 font-medium text-sm mt-5 px-5"
+                  >
+                    <span
+                      class="col-span-1 mx-auto bg-sky-700"
+                      id="circle"
+                    ></span>
+                    <p
+                      class="col-span-11 flex justify-between items-center mx-1"
+                    >
+                      VueJs Frontend Development<span class="font-medium"
+                        >10th</span
+                      >
+                    </p>
+                  </div>
+
+                  <div
+                    class="flex items-center grid grid-cols-12 font-medium text-sm my-5 px-5"
+                  >
+                    <span
+                      class="col-span-1 mx-auto bg-yellow-400"
+                      id="circle"
+                    ></span>
+                    <p
+                      class="col-span-11 flex justify-between items-center mx-1"
+                    >
+                      Laravel Rest AP<span class="font-medium">31th</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="grid grid-cols-1 gap-3 grid-flow-row auto-rows-max"
+                id="limages"
+              >
+                <p class="text-lg font-medium mt-10 mb-4">Transactions</p>
+
+                <div
+                  class="grid grid-cols-12 p-2 flex items-center bg-white hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg"
+                >
+                  <img
+                    class="col-span-2 rounded-full mx-auto"
+                    src="dbimg/mens1.jpg"
+                  />
+                  <p class="col-span-8 px-2 font-semibold text-sm">
+                    John Travolta<br />
+                    <span class="text-xs font-medium">7 August 2022</span>
+                  </p>
+                  <span class="col-span-2 text-lime-500 text-sm font-semibold"
+                    >+$152</span
+                  >
+                </div>
+
+                <div
+                  class="grid grid-cols-12 p-2 flex items-center bg-white hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg"
+                >
+                  <img
+                    class="col-span-2 rounded-full mx-auto"
+                    src="dbimg/women2.jpg"
+                  />
+                  <p class="col-span-8 px-2 font-semibold text-sm">
+                    Kevin Spacey<br />
+                    <span class="text-xs font-medium">5 December 2022</span>
+                  </p>
+                  <span class="col-span-2 text-lime-500 text-sm font-semibold"
+                    >+$74</span
+                  >
+                </div>
+
+                <div
+                  class="grid grid-cols-12 p-2 flex items-center bg-white hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg"
+                >
+                  <img
+                    class="col-span-2 rounded-full mx-auto"
+                    src="dbimg/profile.jpg"
+                  />
+                  <p class="col-span-8 px-2 font-semibold text-sm">
+                    Charlize Theron<br />
+                    <span class="text-xs font-medium">30 August 2022</span>
+                  </p>
+                  <span class="col-span-2 text-lime-500 text-sm font-semibold"
+                    >+$40</span
+                  >
+                </div>
+
+                <div
+                  class="grid grid-cols-12 p-2 flex items-center bg-white hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg"
+                >
+                  <img
+                    class="col-span-2 rounded-full mx-auto"
+                    src="dbimg/mens2.jpg"
+                  />
+                  <p class="col-span-8 px-2 font-semibold text-sm">
+                    Nicolas Cage<br />
+                    <span class="text-xs font-medium">24 November 2020</span>
+                  </p>
+                  <span class="col-span-2 text-lime-500 text-sm font-semibold"
+                    >+$59</span
+                  >
+                </div>
+
+                <div
+                  class="grid grid-cols-12 p-2 flex items-center bg-white hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg"
+                >
+                  <img
+                    class="col-span-2 rounded-full mx-auto"
+                    src="dbimg/women1.jpg"
+                  />
+                  <p class="col-span-8 px-2 font-semibold text-sm">
+                    Jenny Depp<br />
+                    <span class="text-xs font-medium">2 March 2022</span>
+                  </p>
+                  <span class="col-span-2 text-red-500 text-sm font-semibold"
+                    >-$94</span
+                  >
+                </div>
+
+                <button
+                  class="border border-slate-400 rounded-md border-dotted py-3"
+                >
+                  View More
+                </button>
+              </div>
+
+              <div class="grid grid-cols-1 grid-flow-row auto-rows-max gap-3">
+                <div class="flex justify-between mt-10 mb-4 items-center">
+                  <p class="text-lg font-medium">Recent Activities</p>
+                  <p class="text-sm font-medium text-indigo-700">Show More</p>
+                </div>
+
+                <!-- 1st part -->
+
+                <div class="grid grid-cols-12 gap-3" id="part1">
+                  <div class="col-span-2 flex items-center">
+                    <img class="rounded-full mx-auto" src="dbimg/mens2.jpg" />
+                  </div>
+                  <div
+                    class="flex justify-between col-span-10 bg-white p-3 hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg"
+                  >
+                    <p class="font-semibold text-sm">
+                      Kater Winslet<br />
+                      <span class="text-sm font-normal"
+                        >Has joined the team</span
+                      >
+                    </p>
+                    <span class="text-xs">07:00 PM</span>
+                  </div>
+                </div>
+
+                <!-- 2nd part -->
+
+                <div class="grid grid-cols-12 gap-3" id="part2">
+                  <div class="col-span-2 flex items-center">
+                    <img class="rounded-full mx-auto" src="dbimg/main.jpg" />
+                  </div>
+                  <div
+                    class="flex justify-between col-span-10 bg-white p-3 hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg"
+                  >
+                    <div class="font-semibold text-sm">
+                      A Bazz<br />
+                      <span class="text-sm font-normal">Added 3 new photos</span
+                      ><br />
+
+                      <div class="flex mt-2" id="inimage">
+                        <img src="dbimg/profile.jpg" />&nbsp;&nbsp;<img
+                          src="dbimg/profile1.jpg"
+                        />&nbsp;&nbsp;<img src="dbimg/profile2.jpg" />
+                      </div>
+                    </div>
+                    <span class="text-xs">07:00 PM</span>
+                  </div>
+                </div>
+
+                <span class="text-xs text-center my-2">12 November</span>
+
+                <!-- 3rd part -->
+
+                <div class="grid grid-cols-12 gap-3" id="part3">
+                  <div class="col-span-2 flex items-center">
+                    <img class="rounded-full mx-auto" src="dbimg/women2.jpg" />
+                  </div>
+                  <div
+                    class="flex justify-between col-span-10 bg-white p-3 hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg"
+                  >
+                    <p class="font-semibold text-sm">
+                      Leonardo DiCaprio<br />
+                      <span class="text-sm font-normal"
+                        >Has changed
+                        <span class="font-medium text-sm">Nikon Z6.</span></span
+                      >
+                    </p>
+                    <span class="text-xs">07:00 PM</span>
+                  </div>
+                </div>
+
+                <!-- 4th part -->
+
+                <div class="grid grid-cols-12 gap-3" id="part4">
+                  <div class="col-span-2 flex items-center">
+                    <img
+                      class="rounded-full mx-auto"
+                      src="dbimg/profile2.jpg"
+                    />
+                  </div>
+                  <div
+                    class="flex justify-between col-span-10 bg-white p-3 hover:scale-105 duration-300 rounded-lg hover:drop-shadow-lg"
+                  >
+                    <p class="font-semibold text-sm">
+                      John Travolta<br />
+                      <span class="text-sm font-normal"
+                        >Has changed
+                        <span class="font-medium text-sm"
+                          >Samsung Q90.</span
+                        ></span
+                      >
+                    </p>
+                    <span class="text-xs">07:00 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="tailwind.js"></script>
+  </body>
+</html>

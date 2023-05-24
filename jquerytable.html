@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>JQuery DataTable</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css"
+    />
+
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" type="text/css" href="jquerydt.css" />
+  </head>
+
+  <body>
+    <div class="max-w-[1500px] xl:p-3 bg-blue-800">
+      <div class="max-w-[1500x] grid grid-cols-12">
+        <!-- 2nd Asidebar -->
+
+        <div id="inasidebar">
+          <i class="fa-solid fa-xmark" id="rembtn"></i>
+
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-house"></i>&nbsp;
+                <span>Dashboard</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-cubes"></i>&nbsp;
+                <span>Menu Layout</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-suitcase"></i>&nbsp;&nbsp;
+                <span>E-Commerce</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-inbox"></i>&nbsp;&nbsp;
+                <span>Inbox</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-regular fa-folder-open"></i>&nbsp;&nbsp;
+                <span>File Manager</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-credit-card"></i>&nbsp;&nbsp;
+                <span>Point of Salet</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-regular fa-message"></i>&nbsp;&nbsp;
+                <span class="title">Chat</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-file-lines"></i
+                >&nbsp;&nbsp;&nbsp;
+                <span>Post</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;&nbsp;
+                <span>Calender</span>
+              </a>
+            </li>
+
+            <hr />
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;&nbsp;
+                <span>Crud</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-user-group"></i>&nbsp;
+                <span>User</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-id-card-clip"></i>&nbsp;&nbsp;
+                <span>Profile</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-pager"></i>&nbsp;&nbsp;
+                <span>Pages</span>
+              </a>
+            </li>
+
+            <hr />
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-box-archive"></i>&nbsp;&nbsp;
+                <span>Components</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-table-list"></i>&nbsp;&nbsp;
+                <span>Forms</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-sharp fa-solid fa-server"></i>&nbsp;&nbsp;
+                <span>Widgets</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="xl:col-span-2 col-span-12">
+          <div class="grid grid-cols-1 text-white xl:hidden" id="fixnav1">
+            <div id="fixnav2">
+              <i class="fa-solid fa-layer-group"></i>
+              <i class="fa-solid fa-bars" id="openaside"></i>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 xl:block hidden" id="nevigation">
+            <ul class="ps-2">
+              <li class="flex items-center font-medium ps-4 pt-5 pb-2">
+                <a href="/index.html">
+                  <i class="fa-solid fa-layer-group text-2xl"></i>
+                  <span class="title">DevInk Solutions</span>
+                </a>
+              </li>
+
+              <hr class="mt-8 mb-6 mx-1" />
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-house"></i>&nbsp;
+                  <span class="title">Dashboard</span>
+                </a>
+              </li>
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="/index.html">
+                  <i class="fa-sharp fa-solid fa-cubes"></i>&nbsp;
+                  <span class="title">Menu Layout</span>
+                </a>
+              </li>
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-suitcase"></i>&nbsp;&nbsp;
+                  <span class="title">E-Commerce</span>
+                </a>
+              </li>
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-inbox"></i>&nbsp;&nbsp;
+                  <span class="title">Inbox</span>
+                </a>
+              </li>
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-regular fa-folder-open"></i>&nbsp;&nbsp;
+                  <span class="title">File Manager</span>
+                </a>
+              </li>
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-credit-card"></i>&nbsp;&nbsp;
+                  <span class="title">Point of Salet</span>
+                </a>
+              </li>
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-regular fa-message"></i>&nbsp;&nbsp;
+                  <span class="title">Chat</span>
+                </a>
+              </li>
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-file-lines"></i
+                  >&nbsp;&nbsp;&nbsp;
+                  <span class="title">Post</span>
+                </a>
+              </li>
+
+              <li class="flex items-center font-normal ps-4 py-3 rounded-s-3xl">
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;&nbsp;
+                  <span class="title">Calender</span>
+                </a>
+              </li>
+
+              <hr class="mt-6 mb-6 mx-1" />
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-calendar-days"></i>&nbsp;&nbsp;
+                  <span class="title">Crud</span>
+                </a>
+              </li>
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-user-group"></i>&nbsp;
+                  <span class="title">User</span>
+                </a>
+              </li>
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-id-card-clip"></i>&nbsp;&nbsp;
+                  <span class="title">Profile</span>
+                </a>
+              </li>
+
+              <li class="flex items-center font-normal ps-4 py-3 rounded-s-3xl">
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-pager"></i>&nbsp;&nbsp;
+                  <span class="title">Pages</span>
+                </a>
+              </li>
+
+              <hr class="mt-6 mb-6 mx-1" />
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-box-archive"></i>&nbsp;&nbsp;
+                  <span class="title">Components</span>
+                </a>
+              </li>
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-1 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-table-list"></i>&nbsp;&nbsp;
+                  <span class="title">Forms</span>
+                </a>
+              </li>
+
+              <li
+                class="flex items-center font-normal ps-4 py-3 mb-8 rounded-s-3xl"
+              >
+                <a href="#">
+                  <i class="fa-sharp fa-solid fa-server"></i>&nbsp;&nbsp;
+                  <span class="title">Widgets</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Content Part -->
+
+        <div class="xl:col-span-10 col-span-12 bg-slate-100 xl:rounded-3xl">
+          <div class="items-center grid grid-cols-12 sm:mx-4 pt-5" id="topnav">
+            <div id="usrpfile">
+              <h4>DevInk Developer</h4>
+              <p id="para1">Front-end Engineer</p>
+
+              <hr />
+
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-user"></i>&nbsp;&nbsp;
+                    <p>Profile</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-pen-to-square"></i>&nbsp;&nbsp;
+                    <p>Add Account</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-lock"></i>&nbsp;&nbsp;&nbsp;
+                    <p>Reset Password</p>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-circle-question"></i>&nbsp;&nbsp;
+                    <p>Help</p>
+                  </a>
+                </li>
+
+                <hr id="sechr" />
+
+                <li style="margin-bottom: 10px">
+                  <a href="#">
+                    <i class="fa-solid fa-toggle-on"></i>&nbsp;&nbsp;
+                    <p>Logout</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex justify-evenly col-span-3 sm:hidden">
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+              <div class="relative" id="notif">
+                <i class="fa-regular fa-bell"></i>
+                <span class="rounded-full"></span>
+              </div>
+            </div>
+
+            <div class="col-span-9 sm:hidden">
+              <img
+                class="rounded-full ml-auto mr-6"
+                src="dbimg/avtar.png"
+                id="mblimg"
+                alt="User Profile Photo"
+              />
+            </div>
+
+            <div
+              class="lg:col-span-8 md:col-span-6 sm:col-span-5 sm:block hidden"
+            >
+              <span class="text-indigo-700 font-medium">Application</span
+              >&nbsp;&nbsp;>&nbsp;&nbsp;Dashboard
+            </div>
+
+            <div
+              class="flex justify-between items-center lg:col-span-4 md:col-span-6 sm:col-span-7 col-span-12 mx-2 sm:mx-0"
+              id="navbar2"
+            >
+              <input
+                class="py-2 px-5 bg-slate-200 rounded-full"
+                type="search"
+                name=""
+                placeholder="Search..."
+              />
+
+              <div class="relative" id="notif">
+                <i class="fa-regular fa-bell"></i>
+                <span class="rounded-full"></span>
+              </div>
+
+              <img class="rounded-full" src="dbimg/avtar.png" id="image" />
+            </div>
+          </div>
+
+          <hr class="text-white mt-8 mx-6" id="hrs" />
+
+          <div id="tableimg" class="mx-5 overflow-x-auto my-20">
+            <table id="mytable" class="table table-striped" style="width: 100%">
+              <thead class="text-left">
+                <tr class="text-sm">
+                  <th>IMAGES</th>
+                  <th>PRODUCT NAME</th>
+                  <th>STOCK</th>
+                  <th>STATUS</th>
+                  <th>ACTIONS</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail1.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail1.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail1.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Nikon Z6</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>50</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail2.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Dell XPS 13</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>80</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail3.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Nike Tanjun</span> <br />Sport &
+                    Outdoor
+                  </td>
+                  <td>30</td>
+                  <td class="text-red-500">
+                    <i class="fa-regular fa-square-check"></i
+                    >&nbsp;&nbsp;Inactive
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail4.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail4.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail4.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Sony A7 III</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>99</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail3.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Nike Tanjun</span> <br />Sport &
+                    Outdoor
+                  </td>
+                  <td>30</td>
+                  <td class="text-red-500">
+                    <i class="fa-regular fa-square-check"></i
+                    >&nbsp;&nbsp;Inactive
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail4.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail4.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail4.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Sony A7 III</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>99</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail4.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail4.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail4.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Sony A7 III</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>99</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail1.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail1.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail1.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Nikon Z6</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>50</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail2.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Dell XPS 13</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>80</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail3.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Nike Tanjun</span> <br />Sport &
+                    Outdoor
+                  </td>
+                  <td>30</td>
+                  <td class="text-red-500">
+                    <i class="fa-regular fa-square-check"></i
+                    >&nbsp;&nbsp;Inactive
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail2.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Dell XPS 13</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>80</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail3.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Nike Tanjun</span> <br />Sport &
+                    Outdoor
+                  </td>
+                  <td>30</td>
+                  <td class="text-red-500">
+                    <i class="fa-regular fa-square-check"></i
+                    >&nbsp;&nbsp;Inactive
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail2.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Dell XPS 13</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>80</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail3.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Nike Tanjun</span> <br />Sport &
+                    Outdoor
+                  </td>
+                  <td>30</td>
+                  <td class="text-red-500">
+                    <i class="fa-regular fa-square-check"></i
+                    >&nbsp;&nbsp;Inactive
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail2.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Dell XPS 13</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>80</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail3.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Nike Tanjun</span> <br />Sport &
+                    Outdoor
+                  </td>
+                  <td>30</td>
+                  <td class="text-red-500">
+                    <i class="fa-regular fa-square-check"></i
+                    >&nbsp;&nbsp;Inactive
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail2.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Dell XPS 13</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>80</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail3.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail3.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Nike Tanjun</span> <br />Sport &
+                    Outdoor
+                  </td>
+                  <td>30</td>
+                  <td class="text-red-500">
+                    <i class="fa-regular fa-square-check"></i
+                    >&nbsp;&nbsp;Inactive
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail1.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail1.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail1.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Nikon Z6</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>50</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail2.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Dell XPS 13</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>80</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail1.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail1.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail1.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Nikon Z6</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>50</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail2.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Dell XPS 13</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>80</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail1.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail1.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail1.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Nikon Z6</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>50</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+
+                <tr class="text-sm bg-white border-y-8 border-slate-100">
+                  <td class="flex ps-5 py-3">
+                    <img
+                      class="rounded-full border-2 border-yellow-200"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-4"
+                      src="dbimg/tail2.jpg"
+                    />
+                    <img
+                      class="rounded-full border-2 border-yellow-200 relative right-8"
+                      src="dbimg/tail2.jpg"
+                    />
+                  </td>
+                  <td>
+                    <span class="font-semibold">Dell XPS 13</span> <br />
+                    PC & Laptop
+                  </td>
+                  <td>80</td>
+                  <td class="text-lime-500">
+                    <i class="fa-regular fa-square-check"></i>&nbsp;&nbsp;Active
+                  </td>
+                  <td class="text-gray-700">
+                    <i class="fa-regular fa-pen-to-square"></i
+                    >&nbsp;&nbsp;Edit&nbsp;&nbsp;&nbsp;<span
+                      class="text-red-500"
+                      ><i class="fa-solid fa-trash-can"></i
+                      >&nbsp;&nbsp;Delete</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="jqtablejs.js"></script>
+  </body>
+</html>
